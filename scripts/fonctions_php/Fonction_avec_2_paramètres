@@ -1,0 +1,19 @@
+// Fonction avec 2 paramètres
+/**
+ *
+ * @param type $a
+ * @param type $b
+ * @return type
+ */
+function addition($a, $b) {
+    return $a + $b;
+}
+
+/*
+ * MAIN
+ */
+$r = addition(2, 4);
+echo $r;
+?>
+
+

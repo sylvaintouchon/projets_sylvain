@@ -1,0 +1,7 @@
+Pour se connecter à distance il faut créer un autre user que root :
+par exemple ...
+CREATE USER p IDENTIFIED BY 'b';
+GRANT ALL ON *.* TO 'p'@'%';
+FLUSH PRIVILEGES;
+Il faut modifier le fichier nommé conf.inc.php.
+Plus exactement les paramètres user, password et host.

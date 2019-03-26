@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>FORMULAIRE</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div><strong>FORMULAIRE</strong></div>
+        <br>
+        <br>
+        <form method="post" action ="mailto:">
+            votre nom
+            <input type="text" placeholder="Entrez un pseudo">
+            <!-- placeholder met en grisé -->
+            <br>
+            votre prénom
+            <input type="text" value ="valeur" name="prenom">
+            <br>
+            votre mot de passe
+            <input type="password" name="password">
+            <br>
+             <br>
+            nombre
+            <input type="number" name="nombre" value="" />
+            <br>
+
+            pin a 4 chiffres
+            <input type="text" size="4" maxlength="4">
+            <!-- limite la chaine à 4 caractères et un cadre de 4 caractères -->
+            <br>
+            email: 
+            <input type="email" size="35" required>
+            <br>
+            curseur: 
+            <input type="range" min="0" max="100" value="3">
+            <br>
+
+            entrer la date: 
+            <input type="date">
+            <br>
+            cocher la case
+            <input type="checkbox" checked="">
+            <!-- "checked=" veux dire cochée par défaut -->
+            <br>
+            zone de texte
+            <TEXTAREA name="nom" rows=4 cols=40>Valeur par défaut</TEXTAREA>
+            <br>
+transmet un champ caché
+            <input type="hidden" name="champcache">
+            <br>
+            <input type="radio" id="contactChoice1" name="contact" value="email">
+            <label for="contactChoice1">Email</label>
+            <input type="radio" id="contactChoice2" name="contact" value="telephone" checked="">
+            <label for="contactChoice2">Téléphone</label>
+            <input type="radio" id="contactChoice3" name="contact" value="courrier">
+            <label for="contactChoice3">Courrier</label>
+            <br>
+            champ désactivé
+            <input type="text" readonly value="non envoyé">
+            <br>
+            champ obligatoire
+            <input type="text" required>
+            <br>
+            valider
+            <input type="submit">
+        </form>
+    </body>
+</html>
